@@ -1,0 +1,227 @@
+.contenedorCompleto{
+
+    transition: 3s; 
+    width: 60vw;
+    height: 55vh;
+    background: black;
+    opacity: 0.9;
+    border-radius: 40px;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    display: flex;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.parteIzquierda{
+    
+    height: 100%;
+    width: 30%;
+    position: relative;
+    background: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-right: 4px solid;
+
+}
+
+.parteDerecha{
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    width: 60%;
+
+
+}
+.parteUltima{
+
+    background: rgb(255, 255, 255);
+    width: 20%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+
+}
+
+.parteIzquierda h1{
+
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7em;
+    color: rgb(95, 4, 104);
+
+
+}
+
+#labelRut{
+    
+    filter: blur(1.9px);
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    color: rgb(95, 4, 104);
+    border-bottom-left-radius: 60px;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+#labelRut:hover{
+
+    filter: none;
+    transition: 2s;
+
+}
+
+.fotografia{
+
+    transition: 3s;
+    position: relative;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-70%);
+    display: flexbox;
+    transition: 2s;
+}
+
+
+#fotoImagen{
+
+    transition: 3.54s;
+    width: 75%;
+    height: 75%;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px rgb(70, 3, 77);
+    -webkit-box-shadow: 0px 0px 15px 15px rgba(71, 1, 78, 0.322);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); 
+    
+    
+}
+
+.lenguajesProgramacion{
+
+    padding: 46px;
+    
+    
+}
+.imagenesLenguajes{
+
+        animation: rotation 3s infinite linear;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        
+}
+
+#fotoImagen:hover{
+
+    transition: 3s;
+    /* border-radius:50%; */
+    /* -webkit-border-radius:50%; */
+    box-shadow: 0px 0px 15px 15px rgb(95, 4, 104);
+    -webkit-box-shadow: 0px 0px 15px 15px rgba(23, 14, 24, 0.5);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    /* backface-visibility: hidden; */
+
+
+}
+
+.tituloDatos{
+
+    padding: 3% 5%;
+    color: rgb(95, 4, 104);
+}
+
+.datos{
+    
+    padding-left: 15%;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transform-style: preserve-3d
+    }
+    to {
+        -webkit-transform: rotateY(180deg);
+        
+        transform: rotateY(359deg);
+        
+    }
+}
+
+
+
+        /* Separacion para modo
+         tablet-telefono */
+
+
+        @media only screen and (max-width: 1030px){
+
+
+            .contenedorCompleto{
+            
+                height: 40vh;
+                width: 80vw;
+            }
+            
+            .parteIzquierda h1{
+                padding: 10px 20px 0px;
+                color: rgb(82, 3, 82);
+                font-size: 0.8em;
+                text-align: center;
+                
+            
+            }
+            
+            .tituloDatos{
+            
+                padding: 10px 10px;
+                color: rgb(95, 4, 104);
+                font-size: 0.8em;
+            }
+            
+            .datos{
+            
+                padding-left: 15%;
+                font-size: 0.7em;
+                
+            }
+            
+            .lenguajesProgramacion{
+            
+                padding: 25px 25px;
+                border: none;
+            }
+            
+            .imagenesLenguajes{
+            
+                width: 20px;
+                height: 20px;
+                
+                
+            }
+            
+            #labelRut{
+            
+                font-size: 0.7em;
+            }
+            
+            #fotoImagen{
+            
+                width: 60%;
+                height: 60%;
+            }
+            
+            
+        }

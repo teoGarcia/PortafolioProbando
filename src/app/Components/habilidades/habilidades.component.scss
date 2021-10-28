@@ -1,0 +1,178 @@
+.contenedorCompleto{
+
+
+    /* position: relative; */
+    display: flex;
+    margin-top: 60px;
+    
+}
+
+.div__Habilidades{
+    
+    text-align: center;
+    width: 50vw;
+
+}
+.h2__Habilidades{
+
+    color: #fff;
+
+}
+
+.h2__Experiencia{
+
+    text-align: center;
+    color: #fff;
+    
+}
+
+.div__Experiencia{
+
+    width: 50vw;
+    text-align: center;
+    
+    
+}
+
+.Habilidades__Label{
+
+    /* padding-top: 44px; */
+    width: 40% ;
+    display: inline-block;
+    justify-content: center;
+    transform: translateY(-100%);
+    
+
+    
+}
+
+.Progress{
+    /* -webkit-appearance: none; */
+    /* transition: 4s; */
+    padding: 30px 100px;
+    
+    
+    
+    
+} 
+/* progress::after{
+
+    background: orange;
+} */
+
+ /* .Progress::-webkit-progress-value{
+    transition: 2s;
+    background: red;
+    
+  }  */
+.PorcentajesLabel{
+
+    /* padding-top: 44px; */
+    display: inline-block;
+    justify-content: center;
+    transform: translateY(-100%);
+
+}
+
+.divHabilidades{
+
+    padding: 4%;
+    height: 70px;
+    background: rgb(255, 255, 255, 0.6);
+
+}
+
+.ExperienciaDiv{
+
+    padding: 2.135%;
+    height: 70px;
+    background: rgb(24, 21, 20, 0.6);
+
+}
+
+.Experiencia__Label{
+
+    width: 30% ;
+    color: white;
+    display: inline-block;
+    transform: translateY(-100%);
+}
+
+.LabelPorcentajeExp{
+
+
+    color: white;
+    display: inline-block;
+    transform: translateY(-100%);
+    justify-content: center;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1030px){
+
+    .contenedorCompleto{
+
+
+        display: block;
+        
+    }
+    
+
+    .Habilidades__Label{
+
+        display: block;
+        width: 100%;
+        /* margin: 10px; */
+        /* transform: translateY(0); */
+    }
+
+    .PorcentajesLabel{
+
+        /* display: block; */
+        transform: translateY(-200%); 
+
+    }
+
+    .Progress{
+
+        display: flexbox;
+        transform: translateY(-30%);
+        width: 80%;
+    }
+
+    .div__Habilidades{
+    
+        /* text-align: center; */
+        width: 100vw;
+        border: none;
+    
+    }
+
+    .divHabilidades{
+        
+        display: block;
+        position: relative;
+        padding: 25px;
+    }
+
+
+    .div__Experiencia{
+
+        width: 100vw;
+
+    }
+    .h2__Experiencia{
+
+        padding: 15px;
+    }
+
+    .h2__Habilidades{
+
+        padding: 15px;
+    }
+
+}
